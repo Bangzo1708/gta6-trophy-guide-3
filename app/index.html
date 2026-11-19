@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vice Nights — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-in">
+    <div class="hero-text">
+      <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; Fan-made guide</p>
+      <h1>VICE NIGHTS</h1>
+      <p class="sub">The complete trophy guide &amp; tracker &mdash; <strong>55 trophies</strong>: 1 platinum &middot; 2 gold &middot; 6 silver &middot; 46 bronze &middot; <strong>28 hidden</strong> &middot; 0 online &middot; 1 playthrough</p>
+      <p class="sub2">Difficulty 4/10 &middot; about 200 hours to platinum (PowerPyx, 18 Nov 2026) &middot; cheats disable trophies</p>
+    </div>
+    <div class="ring-wrap" title="Your progress">
+      <svg class="ring" viewBox="0 0 120 120" aria-hidden="true">
+        <circle cx="60" cy="60" r="52" class="ring-bg"></circle>
+        <circle id="ringFg" cx="60" cy="60" r="52" class="ring-fg"></circle>
+      </svg>
+      <div class="ring-label"><span id="ringCount">0</span><small>of 55 earned</small></div>
+    </div>
+  </div>
+  <nav class="tabs" aria-label="Views">
+    <button type="button" class="tab on" data-view="checklist">Checklist</button>
+    <button type="button" class="tab" data-view="roadmap">Roadmap to Platinum</button>
+    <button type="button" class="tab" data-view="missables">Missables &amp; Saves</button>
+  </nav>
+</header>
+
+<main>
+  <!-- ============ CHECKLIST VIEW ============ -->
+  <section id="view-checklist" class="view">
+    <div class="strip" id="roadmapStrip" role="button" tabindex="0" title="Open the roadmap">
+      <div class="step"><b>STEP 1</b><span>Story &amp; side strands &middot; 60&ndash;80 h &middot; do the Chapter 1 meditation</span></div>
+      <div class="step"><b>STEP 2</b><span>100% checklist &amp; challenges &middot; ~100 h &middot; the long grind</span></div>
+      <div class="step"><b>STEP 3</b><span>Strangers &amp; Freaks + cleanup &middot; ~10 h &middot; then the platinum</span></div>
+    </div>
+
+    <div class="banner" id="missableBanner">&#9888;&#65038; <strong>ONE MISSABLE:</strong> <button type="button" class="linklike" data-open-trophy="Positive Mental Attitude">Positive Mental Attitude</button> &mdash; meditate at every spot. Do the Chapter 1 balcony meditation before the chapter ends, or it may be gone for good.</div>
+
+    <div class="tools">
+      <input id="search" type="search" placeholder="Search trophies&hellip;" aria-label="Search trophies">
+      <div class="chips" id="kindChips" role="group" aria-label="Filter by kind"></div>
+      <label class="ctl">Grade
+        <select id="gradeFilter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="ctl check"><input type="checkbox" id="onlyUnearned"> Only unearned</label>
+      <label class="ctl switch"><input type="checkbox" id="spoilerToggle" checked> <span>Hide spoilers</span></label>
+      <div class="io">
+        <button type="button" id="exportBtn">Export progress</button>
+        <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+        <button type="button" id="resetBtn" title="Clear all ticks">Reset</button>
+      </div>
+    </div>
+    <p class="result-line" id="resultLine"></p>
+
+    <div class="grid">
+      <section class="list-wrap" aria-label="Trophy checklist">
+        <div id="trophyList" class="list"></div>
+        <p id="emptyNote" class="empty" hidden>No trophies match these filters.</p>
+      </section>
+
+      <aside class="aside">
+        <section class="panel" id="guidePanel" aria-live="polite"></section>
+        <section class="panel nextup">
+          <h3>Next up &mdash; your planner</h3>
+          <p class="next-note" id="nextNote"></p>
+          <ol class="next" id="nextList"></ol>
+        </section>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ ROADMAP VIEW ============ -->
+  <section id="view-roadmap" class="view" hidden>
+    <h2 class="page-title">Roadmap to the platinum</h2>
+    <p class="page-intro">One playthrough, no difficulty settings, no mission medals and no mission replay (PowerPyx). Free roam continues after the story, so almost everything can be cleaned up at the end — except the one missable meditation in Step 1.</p>
+    <div class="road-cards">
+      <article class="road-card">
+        <p class="road-kicker">Step 1 &middot; about 60&ndash;80 hours</p>
+        <h3>Story &amp; side strands</h3>
+        <p>Play the story at your own pace. Along the way, do these because they all count later:</p>
+        <ul>
+          <li><strong>Do the Chapter 1 meditation</strong> at Jason&rsquo;s house the morning after Down to Earth — the only possibly missable trophy.</li>
+          <li><strong>Take optional missions as they appear.</strong> 100% needs any 100 of them, out of several hundred.</li>
+          <li><strong>Scan every new vehicle</strong> with the WAiNK app. 100% needs 200 of 277 base models.</li>
+          <li><strong>Study new animals</strong> through the binoculars. 100% needs 100 of 255. You do not have to hunt them.</li>
+          <li><strong>Start the stranger strands</strong> when they call or appear — Andy (Ch. 3, Lucia only), Billy (Ch. 2), Randy (Ch. 3), Tyrone (Ch. 3, Jason only), Kenton (treasure diving, 7 shipwrecks).</li>
+          <li><strong>Turn on progress notifications</strong> in the UI settings, so you can see what counts.</li>
+        </ul>
+        <p class="road-trophies">Trophies here: all 12 story trophies, Positive Mental Attitude, Master of None, Baited My Tackle, Stick Fiddler, Hot Together, Retail Therapy, Gunslinger, Sneakthief, A Classic Blitz Play.</p>
+      </article>
+      <article class="road-card">
+        <p class="road-kicker">Step 2 &middot; about 100 hours</p>
+        <h3>The 100% checklist &amp; challenges</h3>
+        <p>The checklist appears after the story, under Progress, then Stats, then 100% Completion. Progress made during the story already counts, and PowerPyx says nothing on it is missable.</p>
+        <p>PowerPyx calls the checklist lenient — closer to 60% true completion. The table below is the whole of it. The gold <strong>A Long Road</strong> is the hardest trophy in the game.</p>
+        <p class="road-trophies">Trophies here: A Long Road, Cunning Stunts, The Shootist, Top Fun, Earn Cash Not Kudos, Don&rsquo;t Touch My Deck, You WAiNKer!, One Last Thing, Whip It Good, Maximum Withdrawal, The Goodtime State, Pest Control, Fair Game, Dime on the Dollar, Treat Yo Self, Little Boxes, On the Spot.</p>
+      </article>
+      <article class="road-card">
+        <p class="road-kicker">Step 3 &middot; about 10 hours</p>
+        <h3>Strangers &amp; Freaks + cleanup</h3>
+        <p>Most trophies should be done by now. PowerPyx says Strangers &amp; Freaks is not part of 100%, so you may still need those 8 strands — finish any stranger questline you have left, sweep the remaining unconfirmed trophies (In The Beginning&hellip;, Bad Luck, I Guess, Ten Pin) once guides confirm them, and the platinum follows.</p>
+        <p class="road-trophies">Trophies here: Strangers &amp; Freaks, the 5 stranger-strand finals (Andy, Kenton, Billy, Randy, Tyrone), Vice Got a Price! (platinum).</p>
+      </article>
+    </div>
+
+    <h3 class="table-title">The 100% completion checklist</h3>
+    <p class="table-note">From PowerPyx&rsquo;s trophy guide (18 Nov 2026); counts from PSNProfiles. Tick a row when you finish it in-game — the table is a checklist of its own, saved in your browser.</p>
+    <table class="hundred">
+      <thead><tr><th></th><th>Requirement</th><th>Target</th><th>Feeds</th></tr></thead>
+      <tbody id="hundredBody"></tbody>
+    </table>
+  </section>
+
+  <!-- ============ MISSABLES VIEW ============ -->
+  <section id="view-missables" class="view" hidden>
+    <h2 class="page-title">Missables &amp; saves</h2>
+    <p class="page-intro">Good news first: <strong>only one trophy may be missable</strong> (PowerPyx; Push Square lists none). Everything else can be finished in free roam after the story.</p>
+    <div class="miss-grid">
+      <article class="miss-card danger">
+        <p class="road-kicker">The one missable</p>
+        <h3>Positive Mental Attitude</h3>
+        <p class="meta-line">Bronze &middot; Meditate at every spot across Leonida &middot; 18 spots in 10 locations</p>
+        <p>The first meditation is offered in Chapter 1: the morning after the mission <strong>Down to Earth</strong>, Lucia says she is going to meditate and walks out to the balcony at Jason&rsquo;s house. <strong>Follow her and accept the optional meditation.</strong> It is gone after Chapter 1.</p>
+        <p>PowerPyx reports that it raises the meditation counter by one, but it is not marked as a meditation spot like the other 18 — so it is unclear whether the trophy needs it. PowerPyx had done it when the trophy unlocked. <strong>Do it when it comes up. It takes a minute and removes the risk.</strong></p>
+        <p class="save-tip">Save strategy: keep a manual save from the start of Chapter 1 until this trophy pops. The game has 15 manual save slots plus 1 autosave.</p>
+      </article>
+      <article class="miss-card">
+        <p class="road-kicker">Save strategy</p>
+        <h3>Keep your run safe</h3>
+        <ul>
+          <li><strong>15 manual slots + 1 autosave.</strong> Missions cannot be replayed, so PowerPyx suggests keeping a save at the start and end of each chapter, then rotating the rest during free roam.</li>
+          <li><strong>Chapter 1 start save:</strong> keep it until Positive Mental Attitude pops — it is your only way back if you skip the balcony meditation.</li>
+          <li><strong>Before big choices:</strong> save before story choices (Actions Speak Louder counts 500 profile-changing acts; choices feed it either way).</li>
+          <li><strong>Cheats disable trophies</strong> — and stop the game saving. Keep them off the file you use for your platinum run.</li>
+        </ul>
+      </article>
+      <article class="miss-card">
+        <p class="road-kicker">Looks missable, but is not</p>
+        <h3>Do not worry about these</h3>
+        <ul>
+          <li><strong>Optional missions that disappear</strong> after a while (black icons with pink letters). There are far more than you need.</li>
+          <li><strong>Quest givers who go away</strong> for part of the story — Kenton for one. All trophy quest givers come back and stay after the story.</li>
+          <li><strong>Fences who leave for good.</strong> None of them has a trophy quest.</li>
+          <li><strong>Magazine collectibles</strong> in story buildings that close off. They also spawn elsewhere.</li>
+          <li><strong>Timed quests</strong> (hourglass icon). None is tied to a trophy.</li>
+          <li><strong>The Jason–Lucia relationship.</strong> It does not matter for trophies.</li>
+        </ul>
+        <p class="src-line">Source: PowerPyx — GTA 6 Trophy Guide &amp; Roadmap (18 Nov 2026).</p>
+      </article>
+    </div>
+    <p class="warn-line">One warning that is not about trophies: PowerPyx says the Irredeemable criminal profile is permanent and makes police more aggressive. You can still earn everything, but it makes the cleanup harder.</p>
+  </section>
+</main>
+
+<footer>
+  <p><strong>Sources.</strong> Trophy names, descriptions, grades and PSN progress targets: the official PlayStation 5 list as published on Exophase and PSNProfiles (frozen 18 Nov 2026). Guides: PowerPyx — GTA 6 Trophy Guide &amp; Roadmap (18 Nov 2026), cross-checked against GTABase and Push Square. Three methods are not yet confirmed by any guide — In The Beginning&hellip;, Bad Luck, I Guess and Ten Pin — and this guide says so beside each one instead of guessing.</p>
+  <p><strong>Fan-made.</strong> Not affiliated with Rockstar Games. No Rockstar logo, official artwork, box art or game screenshots are used anywhere in this guide. All guide text is written in our own words; the official trophy names and descriptions are shown as PlayStation publishes them.</p>
+  <p class="foot-note">Vice Nights &middot; works fully offline &middot; progress is saved only in your browser (localStorage) &middot; export it to keep it safe.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
